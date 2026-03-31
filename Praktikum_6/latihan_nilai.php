@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $status = "Nilai Tidak Valid";
     }
 
-    echo "<b>Luaran yang diharapkan</b><br><br>";
+    echo "<b>Hasil</b><br><br>";
     echo "Nama : $nama <br><br>";
     echo "Nilai : $nilai <br><br>";
     echo "Predikat : $predikat <br><br>";

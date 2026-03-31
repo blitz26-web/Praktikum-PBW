@@ -40,7 +40,7 @@
         $format_ukt = "Rp. " . number_format($biayaUKT, 0, ',', '.') . ",-";
         $format_total = "Rp. " . number_format($total, 0, ',', '.') . ",-";
 
-        echo "<b>Luaran yang diharuskan</b><br><br>";
+        echo "<b>Hasil Diskon</b><br><br>";
         echo "NPM : $npm <br><br>";
         echo "NAMA : $nama <br><br>";
         echo "PRODI : $prodi <br><br>";
