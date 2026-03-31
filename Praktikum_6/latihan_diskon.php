@@ -26,10 +26,10 @@
 
         if ($biayaUKT >= 5000000) {
             if ($semester > 8) {
-                $total = $biayaUKT - ($biayaUKT * 0.15); // Diskon 15%
+                $total = $biayaUKT - ($biayaUKT * 0.15);
                 $diskon = "15%";
             } else {
-                $total = $biayaUKT - ($biayaUKT * 0.10); // Diskon 10%
+                $total = $biayaUKT - ($biayaUKT * 0.10);
                 $diskon = "10%";
             }
         } else {
