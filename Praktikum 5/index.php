@@ -20,4 +20,6 @@ echo "Jumlah Beli: " . $jumlah_beli . "<br>";
 echo "Total Harga (Sebelum Pajak): Rp " . number_format($total_sebelum_pajak, 0, ',', '.') . "<br>";
 echo "Pajak (10%): Rp " . number_format($nominal_pajak, 0, ',', '.') . "<br>";
 echo "<b>Total Bayar: Rp " . number_format($total_bayar, 0, ',', '.') . "</b>";
+echo "<hr>";
+echo "<a href='../Pertemuan_6/latihan_nilai.php'> Menuju ke Tugas Selanjutnya (Latihan Nilai)</a>";
 ?>
