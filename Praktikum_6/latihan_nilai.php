@@ -13,42 +13,40 @@
     </form>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        
-        $nama = htmlspecialchars($_POST["nama"]);
-        $nilai = $_POST["nilai"];
-        $predikat = "";
-        $status = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    $nama = htmlspecialchars($_POST["nama"]);
+    $nilai = $_POST["nilai"];
+    $predikat = "";
+    $status = "";
 
-        if ($nilai >= 85 && $nilai <= 100) {
-            $predikat = "A";
-        } elseif ($nilai >= 75 && $nilai <= 84) {
-            $predikat = "B";
-        } elseif ($nilai >= 65 && $nilai <= 74) {
-            $predikat = "C";
-        } elseif ($nilai >= 50 && $nilai <= 64) {
-            $predikat = "D";
-        } elseif ($nilai >= 0 && $nilai <= 49) {
-            $predikat = "E";
-        } else {
-            $predikat = "Tidak valid";
-        }
+    if ($nilai >= 85 && $nilai <= 100) {
+        $predikat = "A";
+    } elseif ($nilai >= 75 && $nilai <= 84) {
+        $predikat = "B";
+    } elseif ($nilai >= 65 && $nilai <= 74) {
+        $predikat = "C";
+    } elseif ($nilai >= 50 && $nilai <= 64) {
+        $predikat = "D";
+    } elseif ($nilai >= 0 && $nilai <= 49) {
+        $predikat = "E";
+    } else {
+        $predikat = "Tidak valid";
+    }
 
-        if ($predikat == "A" || $predikat == "B" || $predikat == "C") {
-            $status = "Lulus";
-        } elseif ($predikat == "D" || $predikat == "E") {
-            $status = "Tidak Lulus";
-        } else {
-            $status = "Nilai Tidak Valid";
-        }
+    if ($predikat == "A" || $predikat == "B" || $predikat == "C") {
+        $status = "Lulus";
+    } elseif ($predikat == "D" || $predikat == "E") {
+        $status = "Tidak Lulus";
+    } else {
+        $status = "Nilai Tidak Valid";
+    }
 
-        echo "<div class='hasil'>";
-        echo "<b>Luaran yang diharapkan</b><br><hr>";
-        echo "Nama : " . $nama . "<br><br>";
-        echo "Nilai : " . $nilai . "<br><br>";
-        echo "Predikat : " . $predikat . "<br><br>";
-        echo "Status : " . $status . "<br>";
-        echo "</div>";
+    echo "<b>Luaran yang diharapkan</b><br><br>";
+    echo "Nama : $nama <br><br>";
+    echo "Nilai : $nilai <br><br>";
+    echo "Predikat : $predikat <br><br>";
+    echo "Status : $status <br>";
     }
     ?>
 
