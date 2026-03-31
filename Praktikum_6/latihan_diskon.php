@@ -12,7 +12,7 @@
         Prodi: <input type="text" name="prodi" required>
         Semester: <input type="number" name="semester" required>
         Biaya UKT (Rp): <input type="number" name="biaya_ukt" required>
-        <input type="submit" value="Hitung Pembayaran">
+        <input type="submit" name="submit" value="Hitung Pembayaran">
     </form>
 
     <?php
