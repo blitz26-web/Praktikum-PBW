@@ -22,7 +22,7 @@
         $nama = strtoupper(htmlspecialchars($_POST['nama']));
         $prodi = strtoupper(htmlspecialchars($_POST['prodi']));
         $semester = $_POST['semester'];
-        $biayaUKT = $_POST['biayaUKT'];
+        $biayaUKT = $_POST['biaya_ukt'];
 
         if ($biayaUKT >= 5000000) {
             if ($semester > 8) {
