@@ -46,8 +46,8 @@
         echo "PRODI : $prodi <br><br>";
         echo "SEMESTER : $semester <br><br>";
         echo "BIAYA UKT : $format_ukt <br><br>";
-        echo "DISKON : $diskon (otomatis ditentukan oleh if) <br><br>";
-        echo "YANG HARUS DIBAYAR : $format_total (otomatis ditentukan oleh if) <br>";
+        echo "DISKON : $diskon <br><br>";
+        echo "YANG HARUS DIBAYAR : $format_total <br>";
     }
     ?>
 
