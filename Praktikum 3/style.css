@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #b22222; /* Merah gelap */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.8rem;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.main-content {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.main-content h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.main-content p {
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #c0c0c0; 
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.sidebar p {
+    font-size: 0.8rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.radio-group, .checkbox-group {
+    font-size: 0.8rem;
+    padding-left: 5px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.btn-kirim {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-kirim:hover {
+    background-color: #2980b9;
+}

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Latihan UTS</title>
+    </head>
+    <body>
+        <h1>Form Pendaftaran Belanja</h1>
+        <p>Ini adalah latihan untuk UTS</p>
+        <form action="proses.php" method="post">
+            <label>Nama:</label>
+            <input type="text" name="nama" required><br><br>
+            <label>Email:</label>
+            <input type="email" name="email" required><br><br>
+            <label>NPM:</label>
+            <input type="text" name="npm" required minlength="8" maxlength="12"><br><br>
+            <label>Jenis Layanan:</label>
+            <select name="layanan" required>
+                <option value="Reguler">Reguler</option>
+                <option value="Prioritas">Prioritas</option>
+            </select><br><br>
+        <p>pilih barang & jumlah:</p>
+        <div class="item-group">
+            <input type="checkbox" name="barang[]" value="Buku Tulis"> Buku Tulis (5000)
+            <input type="number" name="jumlah[Buku Tulis]" min="1" placeholder="Jml">
+        </div>
+        <div class="item-group">
+            <input type="checkbox" name="barang[]" value="Pensil"> Pensil (3000)
+            <input type="number" name="jumlah[Pensil]" min="1" placeholder="Jml">
+        </div>
+        <div class="item-group">
+            <input type="checkbox" name="barang[]" value="Penghapus"> Penghapus (2000)
+            <input type="number" name="jumlah[Penghapus]" min="1" placeholder="Jml">
+        </div><br>
+        <label> Metode Pengambilan:</label>
+        <input type="radio" name="metode"value="GET" required> GET (Ambil Sendiri)
+        <input type="radio" name="metode"value="DELIVERY" required> DELIVERY (Diantar)<br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    </body>
+</html>
